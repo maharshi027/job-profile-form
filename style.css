@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(178, 230, 222);
+}
+.container {
+    max-width: 80vw;
+    margin: auto;
+}
+
+.application-box {
+    max-width: 600px;
+    padding: 20px;
+    background-color: bisque;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow: 5px 8px 10px rgba(255, 2, 23, .6);
+    border-radius: 12px;
+
+}
+
+.title-head {
+    font-size: 20px;
+}
+
+.form-container {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 15px;
+    margin-bottom: 6px;
+}
+
+input,
+select,
+textarea {
+    padding: 6px 10px;
+    border: 2px solid rgb(100, 26, 26);
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+input:focus {
+    outline-color: rgb(56, 4, 99);
+}
+
+select:focus {
+    outline-color: rgb(52, 123, 211);
+}
+
+textarea:focus {
+    outline-color: rgb(211, 52, 182);
+}
+
+.button-container {
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+}
+
+button {
+    background-color: red;
+    border: transparent solid 2px;
+    padding: 5px 10px;
+    color: rgb(190, 223, 245);
+    border-radius: 7px;
+    transition: 0.3s ease-in;
+}
+
+button:hover {
+    color: coral;
+    background-color: rgb(57, 18, 18);
+    transition: 0.3s ease-out;
+    cursor: pointer;
+}
